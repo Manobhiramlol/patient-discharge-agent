@@ -141,7 +141,20 @@ Batch: `outputs/batch_summary.json`
 - Human-in-the-loop UI with accept/reject per section
 - Stronger LLM extraction with cite-span grounding only
 - Real interaction API behind consent boundary; audit log export
+- ## If I Had More Time
 
-## License / data
+* FHIR / HL7 ingestion and interoperability support for structured EHR integration
+* More advanced OCR and handwriting-aware parsing for scanned clinical documents
+* Human-in-the-loop review UI with section-level accept/reject and provenance inspection
+* Stronger semantic extraction with citation-grounded evidence spans only
+* Enhanced semantic conflict detection across heterogeneous clinical notes
+* Lightweight clinician-feedback learning loop using correction-memory and edit-distance-based reward signals
+* Real clinical safety tooling integration (drug interaction APIs, audit logging, escalation workflows)
+* Improved diagnosis aggregation and longitudinal patient timeline reconstruction
+
+Part 2 (learning from clinician edits) was not fully implemented within the assignment time window. Given more time, I would extend the system with a measurable reviewer-feedback loop using simulated reviewer corrections, section-level edit metrics, and correction-aware extraction refinement while preserving the system’s no-fabrication guarantees.
+
+
+## License/data
 
 Synthetic data only. Do not commit `.env` or real PHI.
