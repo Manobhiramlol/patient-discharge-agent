@@ -1,0 +1,157 @@
+{
+  "patient_id": "P005",
+  "is_draft": true,
+  "review_banner": "DRAFT FOR CLINICIAN REVIEW \u2014 Do not use for clinical decisions without verification.",
+  "demographics": {
+    "name": {
+      "value": "Evelyn Park",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    "mrn": {
+      "value": "SYN-1005",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  },
+  "admission_date": {
+    "value": "2026-05-25",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "discharge_date": {
+    "value": "2026-05-28",
+    "status": "documented",
+    "source_file": "discharge_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "principal_diagnosis": {
+    "value": "NSTEMI",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "secondary_diagnoses": [
+    {
+      "value": "Coronary artery disease",
+      "status": "documented",
+      "source_file": "discharge_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  ],
+  "hospital_course": {
+    "value": null,
+    "status": "missing",
+    "source_file": null,
+    "page": null,
+    "source_note": null,
+    "evidence": null,
+    "flags": [
+      "MISSING \u2014 not documented in source notes"
+    ]
+  },
+  "procedures": [],
+  "discharge_medications": [
+    {
+      "name": "Aspirin",
+      "dose": "81 mg",
+      "route": null,
+      "frequency": "daily reason: secondary prevention post NSTEMI",
+      "admission": false,
+      "discharge": true,
+      "change_type": "new",
+      "documented_reason": "secondary prevention post NSTEMI",
+      "flags": []
+    },
+    {
+      "name": "Atorvastatin",
+      "dose": "40 mg",
+      "route": null,
+      "frequency": "nightly",
+      "admission": true,
+      "discharge": true,
+      "change_type": "unchanged",
+      "documented_reason": null,
+      "flags": []
+    },
+    {
+      "name": "Warfarin",
+      "dose": "3 mg",
+      "route": null,
+      "frequency": "daily",
+      "admission": true,
+      "discharge": true,
+      "change_type": "unchanged",
+      "documented_reason": null,
+      "flags": []
+    }
+  ],
+  "medication_reconciliation_notes": "Medication reconciliation performed against admission and discharge lists in source notes.",
+  "allergies": [
+    {
+      "value": "Latex \u2014 itching",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": "3 mg daily - Atorvastatin 40 mg nightly ALLERGIES: Latex \u2014 itching ",
+      "evidence": "3 mg daily - Atorvastatin 40 mg nightly ALLERGIES: Latex \u2014 itching ",
+      "flags": []
+    }
+  ],
+  "follow_up_instructions": {
+    "value": "Cardiology in 3 days \u2014 bring medication list",
+    "status": "documented",
+    "source_file": "discharge_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "pending_results": [],
+  "discharge_condition": {
+    "value": "Stable for discharge",
+    "status": "documented",
+    "source_file": "discharge_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "safety_escalations": [
+    {
+      "ok": true,
+      "escalated": true,
+      "ticket_id": "ESC-P005-DRUG_INT",
+      "severity": "high",
+      "message": "Increased bleeding risk with warfarin + aspirin combination",
+      "tool": "safety_escalation",
+      "status": "QUEUED_FOR_REVIEW"
+    }
+  ],
+  "conflicts": [],
+  "global_flags": [
+    "DRUG_INTERACTION_FOUND",
+    "DRAFT \u2014 requires clinician sign-off"
+  ]
+}

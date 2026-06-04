@@ -1,0 +1,172 @@
+{
+  "patient_id": "P004",
+  "is_draft": true,
+  "review_banner": "DRAFT FOR CLINICIAN REVIEW \u2014 Do not use for clinical decisions without verification.",
+  "demographics": {
+    "name": {
+      "value": "Thomas Wright",
+      "status": "documented",
+      "source_file": "nursing_assessment.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    "mrn": {
+      "value": "SYN-1004",
+      "status": "documented",
+      "source_file": "nursing_assessment.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  },
+  "admission_date": {
+    "value": "2026-05-01",
+    "status": "documented",
+    "source_file": "nursing_assessment.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "discharge_date": {
+    "value": "2026-05-05",
+    "status": "documented",
+    "source_file": "physician_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "principal_diagnosis": {
+    "value": "Cellulitis left leg",
+    "status": "documented",
+    "source_file": "nursing_assessment.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "secondary_diagnoses": [],
+  "hospital_course": {
+    "value": "IV vancomycin and ceftriaxone. Improved.",
+    "status": "documented",
+    "source_file": "physician_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "procedures": [],
+  "discharge_medications": [
+    {
+      "name": "Cephalexin",
+      "dose": "500 mg",
+      "route": null,
+      "frequency": "four times daily for 7 days",
+      "admission": false,
+      "discharge": true,
+      "change_type": "new",
+      "documented_reason": null,
+      "flags": [
+        "NEW_MED_WITHOUT_DOCUMENTED_REASON"
+      ]
+    }
+  ],
+  "medication_reconciliation_notes": "Medication reconciliation performed against admission and discharge lists in source notes. FLAGGED: Cephalexin: new at discharge without documented reason",
+  "allergies": [
+    {
+      "value": "NKDA",
+      "status": "conflict",
+      "source_file": "nursing_assessment.pdf",
+      "page": 1,
+      "source_note": "RN: SYN-1004 ADMISSION DATE: 2026-05-01 ALLERGIES: NKDA PRINCIPAL DIAGNOSIS: Cel",
+      "evidence": "RN: SYN-1004 ADMISSION DATE: 2026-05-01 ALLERGIES: NKDA PRINCIPAL DIAGNOSIS: Cel",
+      "flags": [
+        "CONFLICTING_SOURCES"
+      ]
+    },
+    {
+      "value": "Sulfa drugs \u2014 hives",
+      "status": "conflict",
+      "source_file": "physician_note.pdf",
+      "page": 1,
+      "source_note": "ENDING NOTE PATIENT NAME: Thomas Wright ALLERGIES: Sulfa drugs \u2014 hives HOSPITAL ",
+      "evidence": "ENDING NOTE PATIENT NAME: Thomas Wright ALLERGIES: Sulfa drugs \u2014 hives HOSPITAL ",
+      "flags": [
+        "CONFLICTING_SOURCES"
+      ]
+    }
+  ],
+  "follow_up_instructions": {
+    "value": "PCP in 7 days",
+    "status": "documented",
+    "source_file": "physician_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "pending_results": [],
+  "discharge_condition": {
+    "value": "Afebrile, erythema resolved",
+    "status": "documented",
+    "source_file": "physician_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "safety_escalations": [
+    {
+      "ok": true,
+      "escalated": true,
+      "ticket_id": "ESC-P004-DATA_CON",
+      "severity": "high",
+      "message": "Allergy list discrepancy between nursing (NKDA) and physician (sulfa)",
+      "tool": "safety_escalation",
+      "status": "QUEUED_FOR_REVIEW"
+    },
+    {
+      "ok": true,
+      "escalated": true,
+      "ticket_id": "ESC-P004-MED_RECO",
+      "severity": "medium",
+      "message": "Med reconciliation flag: Cephalexin",
+      "tool": "safety_escalation",
+      "status": "QUEUED_FOR_REVIEW"
+    }
+  ],
+  "conflicts": [
+    {
+      "field": "documented",
+      "description": "Allergy list discrepancy between nursing (NKDA) and physician (sulfa)",
+      "sources": [
+        "nursing_assessment.pdf",
+        "physician_note.pdf"
+      ],
+      "resolution": "CLINICIAN_REVIEW_REQUIRED"
+    },
+    {
+      "field": "allergies",
+      "description": "Conflicting allergy documentation across notes: nkda | vs | sulfa drugs \u2014 hives",
+      "values": [
+        "nkda",
+        "sulfa drugs \u2014 hives"
+      ],
+      "sources": [
+        "nursing_assessment.pdf",
+        "physician_note.pdf"
+      ],
+      "resolution": "CLINICIAN_REVIEW_REQUIRED"
+    }
+  ],
+  "global_flags": [
+    "NEW_MED_WITHOUT_DOCUMENTED_REASON",
+    "CLINICAL_CONFLICT",
+    "DRAFT \u2014 requires clinician sign-off",
+    "2 conflict(s) require resolution"
+  ]
+}

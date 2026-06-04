@@ -1,0 +1,151 @@
+{
+  "patient_id": "P002",
+  "is_draft": true,
+  "review_banner": "DRAFT FOR CLINICIAN REVIEW \u2014 Do not use for clinical decisions without verification.",
+  "demographics": {
+    "name": {
+      "value": "Robert Chen",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    "mrn": {
+      "value": "SYN-1002",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    "sex": {
+      "value": "M",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  },
+  "admission_date": {
+    "value": "2026-05-18",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "discharge_date": {
+    "value": "2026-05-22",
+    "status": "documented",
+    "source_file": "discharge_orders.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "principal_diagnosis": {
+    "value": "Acute kidney injury",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "secondary_diagnoses": [],
+  "hospital_course": {
+    "value": "Creatinine elevated. Fluids held. Nephrology consulted. Improvement noted",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "procedures": [],
+  "discharge_medications": [
+    {
+      "name": "Amlodipine",
+      "dose": "5 mg",
+      "route": null,
+      "frequency": "daily",
+      "admission": true,
+      "discharge": true,
+      "change_type": "unchanged",
+      "documented_reason": null,
+      "flags": []
+    }
+  ],
+  "medication_reconciliation_notes": "Medication reconciliation performed against admission and discharge lists in source notes.",
+  "allergies": [
+    {
+      "value": "Penicillin \u2014 rash",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": "ON MEDICATIONS: - Amlodipine 5 mg daily ALLERGIES: Penicillin \u2014 rash HOSPITAL CO",
+      "evidence": "ON MEDICATIONS: - Amlodipine 5 mg daily ALLERGIES: Penicillin \u2014 rash HOSPITAL CO",
+      "flags": []
+    }
+  ],
+  "follow_up_instructions": {
+    "value": "Nephrology clinic in 5 days. Confirm PCP contact information.",
+    "status": "documented",
+    "source_file": null,
+    "page": null,
+    "source_note": null,
+    "evidence": null,
+    "flags": [
+      "reviewer_standardized_followup"
+    ]
+  },
+  "pending_results": [
+    {
+      "value": "Urine culture \u2014 pending at discharge",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    {
+      "value": "BMP repeat in 48h \u2014 pending",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    {
+      "value": "Urine culture final report pending",
+      "status": "documented",
+      "source_file": "discharge_orders.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  ],
+  "discharge_condition": {
+    "value": "Improved, creatinine trending down",
+    "status": "documented",
+    "source_file": "discharge_orders.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "safety_escalations": [],
+  "conflicts": [],
+  "global_flags": [
+    "DRAFT \u2014 requires clinician sign-off"
+  ]
+}

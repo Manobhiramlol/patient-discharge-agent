@@ -1,0 +1,113 @@
+{
+  "patterns": [
+    {
+      "patient_id": "P001",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P002",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P003",
+      "edit_log": [
+        "follow_up_standardized",
+        "pharmacist_signoff_added"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P004",
+      "edit_log": [
+        "pharmacist_signoff_added"
+      ],
+      "section_match_rate_before": 1.0
+    },
+    {
+      "patient_id": "P005",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P001",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P002",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P003",
+      "edit_log": [
+        "follow_up_standardized",
+        "pharmacist_signoff_added"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P004",
+      "edit_log": [
+        "pharmacist_signoff_added"
+      ],
+      "section_match_rate_before": 1.0
+    },
+    {
+      "patient_id": "P005",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P001",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P002",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P003",
+      "edit_log": [
+        "follow_up_standardized",
+        "pharmacist_signoff_added"
+      ],
+      "section_match_rate_before": 0.75
+    },
+    {
+      "patient_id": "P004",
+      "edit_log": [
+        "pharmacist_signoff_added"
+      ],
+      "section_match_rate_before": 1.0
+    },
+    {
+      "patient_id": "P005",
+      "edit_log": [
+        "follow_up_standardized"
+      ],
+      "section_match_rate_before": 0.75
+    }
+  ],
+  "version": 1
+}

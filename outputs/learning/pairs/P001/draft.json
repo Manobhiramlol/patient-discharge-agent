@@ -1,0 +1,200 @@
+{
+  "patient_id": "P001",
+  "is_draft": true,
+  "review_banner": "DRAFT FOR CLINICIAN REVIEW \u2014 Do not use for clinical decisions without verification.",
+  "demographics": {
+    "name": {
+      "value": "Jane Doe",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    "dob": {
+      "value": "1985-03-12",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    "mrn": {
+      "value": "SYN-1001",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    "sex": {
+      "value": "F",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  },
+  "admission_date": {
+    "value": "2026-05-10",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "discharge_date": {
+    "value": "2026-05-14",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "principal_diagnosis": {
+    "value": "Community-acquired pneumonia",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "secondary_diagnoses": [
+    {
+      "value": "Type 2 diabetes mellitus",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    {
+      "value": "Type 2 diabetes mellitus",
+      "status": "documented",
+      "source_file": "discharge_summary_source.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  ],
+  "hospital_course": {
+    "value": "Admitted for hypoxemia. IV antibiotics started. Improved over 4 days.",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "procedures": [
+    {
+      "value": "None",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  ],
+  "discharge_medications": [
+    {
+      "name": "Amoxicillin",
+      "dose": "500 mg",
+      "route": null,
+      "frequency": "three times daily for 5 days reason: complete antibiotic course",
+      "admission": false,
+      "discharge": true,
+      "change_type": "new",
+      "documented_reason": "complete antibiotic course",
+      "flags": []
+    },
+    {
+      "name": "Lisinopril",
+      "dose": "10 mg",
+      "route": null,
+      "frequency": "daily",
+      "admission": true,
+      "discharge": true,
+      "change_type": "unchanged",
+      "documented_reason": null,
+      "flags": []
+    },
+    {
+      "name": "Metformin",
+      "dose": "500 mg",
+      "route": null,
+      "frequency": "twice daily",
+      "admission": true,
+      "discharge": true,
+      "change_type": "unchanged",
+      "documented_reason": null,
+      "flags": []
+    }
+  ],
+  "medication_reconciliation_notes": "Medication reconciliation performed against admission and discharge lists in source notes.",
+  "allergies": [
+    {
+      "value": "NKDA",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": "mg twice daily - Lisinopril 10 mg daily ALLERGIES: NKDA HOSPITAL COURSE: Admitte",
+      "evidence": "mg twice daily - Lisinopril 10 mg daily ALLERGIES: NKDA HOSPITAL COURSE: Admitte",
+      "flags": []
+    },
+    {
+      "value": "NKDA",
+      "status": "documented",
+      "source_file": "discharge_summary_source.pdf",
+      "page": 1,
+      "source_note": "mptoms persist. PENDING RESULTS: - None ALLERGIES: NKDA ",
+      "evidence": "mptoms persist. PENDING RESULTS: - None ALLERGIES: NKDA ",
+      "flags": []
+    }
+  ],
+  "follow_up_instructions": {
+    "value": "Primary care in 1 week. Repeat chest X-ray if symptoms persist.",
+    "status": "documented",
+    "source_file": "discharge_summary_source.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "pending_results": [
+    {
+      "value": "None",
+      "status": "documented",
+      "source_file": "discharge_summary_source.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  ],
+  "discharge_condition": {
+    "value": "Stable, ambulating independently",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "safety_escalations": [],
+  "conflicts": [],
+  "global_flags": [
+    "DRAFT \u2014 requires clinician sign-off"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "patients": 5,
+  "mean_section_match_rate": 0.8,
+  "per_patient": [
+    {
+      "patient_id": "P001",
+      "section_match_rate": 0.75,
+      "edits": [
+        "follow_up_standardized"
+      ]
+    },
+    {
+      "patient_id": "P002",
+      "section_match_rate": 0.75,
+      "edits": [
+        "follow_up_standardized"
+      ]
+    },
+    {
+      "patient_id": "P003",
+      "section_match_rate": 0.75,
+      "edits": [
+        "follow_up_standardized",
+        "pharmacist_signoff_added"
+      ]
+    },
+    {
+      "patient_id": "P004",
+      "section_match_rate": 1.0,
+      "edits": [
+        "pharmacist_signoff_added"
+      ]
+    },
+    {
+      "patient_id": "P005",
+      "section_match_rate": 0.75,
+      "edits": [
+        "follow_up_standardized"
+      ]
+    }
+  ],
+  "memory_hints": [
+    "MEMORY: route med-flagged charts to pharmacist review"
+  ],
+  "limitations": [
+    "Cold start: memory empty until first evaluation pass",
+    "Section match rate can be gamed by copying reviewer output",
+    "Safety flags preserved but not used as reward \u2014 intentional"
+  ]
+}

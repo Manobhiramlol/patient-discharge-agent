@@ -1,0 +1,171 @@
+{
+  "patient_id": "P003",
+  "is_draft": true,
+  "review_banner": "DRAFT FOR CLINICIAN REVIEW \u2014 Do not use for clinical decisions without verification.",
+  "demographics": {
+    "name": {
+      "value": "Maria Lopez",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    },
+    "mrn": {
+      "value": "SYN-1003",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": null,
+      "evidence": null,
+      "flags": []
+    }
+  },
+  "admission_date": {
+    "value": "2026-04-02",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "discharge_date": {
+    "value": "2026-04-06",
+    "status": "documented",
+    "source_file": "discharge_meds.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "principal_diagnosis": {
+    "value": "Atrial fibrillation with RVR",
+    "status": "documented",
+    "source_file": "admission_note.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "secondary_diagnoses": [],
+  "hospital_course": {
+    "value": null,
+    "status": "missing",
+    "source_file": null,
+    "page": null,
+    "source_note": null,
+    "evidence": null,
+    "flags": [
+      "MISSING \u2014 not documented in source notes"
+    ]
+  },
+  "procedures": [],
+  "discharge_medications": [
+    {
+      "name": "Aspirin",
+      "dose": "81 mg",
+      "route": null,
+      "frequency": "daily",
+      "admission": false,
+      "discharge": true,
+      "change_type": "new",
+      "documented_reason": null,
+      "flags": [
+        "NEW_MED_WITHOUT_DOCUMENTED_REASON"
+      ]
+    },
+    {
+      "name": "Metoprolol",
+      "dose": "50 mg",
+      "route": null,
+      "frequency": "twice daily",
+      "admission": true,
+      "discharge": true,
+      "change_type": "dose_changed",
+      "documented_reason": null,
+      "flags": [
+        "DOSE_CHANGE_WITHOUT_DOCUMENTED_REASON"
+      ]
+    },
+    {
+      "name": "Warfarin",
+      "dose": "5 mg",
+      "route": null,
+      "frequency": "daily",
+      "admission": true,
+      "discharge": true,
+      "change_type": "unchanged",
+      "documented_reason": null,
+      "flags": []
+    }
+  ],
+  "medication_reconciliation_notes": "Medication reconciliation performed against admission and discharge lists in source notes. FLAGGED: Aspirin: new at discharge without documented reason; Metoprolol: dose changed without documented reason",
+  "allergies": [
+    {
+      "value": "NKDA",
+      "status": "documented",
+      "source_file": "admission_note.pdf",
+      "page": 1,
+      "source_note": "mg daily - Metoprolol 25 mg twice daily ALLERGIES: NKDA ",
+      "evidence": "mg daily - Metoprolol 25 mg twice daily ALLERGIES: NKDA ",
+      "flags": []
+    }
+  ],
+  "follow_up_instructions": {
+    "value": "Cardiology in 2 weeks",
+    "status": "documented",
+    "source_file": "discharge_meds.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "pending_results": [],
+  "discharge_condition": {
+    "value": "Rate controlled",
+    "status": "documented",
+    "source_file": "discharge_meds.pdf",
+    "page": 1,
+    "source_note": null,
+    "evidence": null,
+    "flags": []
+  },
+  "safety_escalations": [
+    {
+      "ok": true,
+      "escalated": true,
+      "ticket_id": "ESC-P003-DRUG_INT",
+      "severity": "high",
+      "message": "Increased bleeding risk with warfarin + aspirin combination",
+      "tool": "safety_escalation",
+      "status": "QUEUED_FOR_REVIEW"
+    },
+    {
+      "ok": true,
+      "escalated": true,
+      "ticket_id": "ESC-P003-MED_RECO",
+      "severity": "medium",
+      "message": "Med reconciliation flag: Aspirin",
+      "tool": "safety_escalation",
+      "status": "QUEUED_FOR_REVIEW"
+    },
+    {
+      "ok": true,
+      "escalated": true,
+      "ticket_id": "ESC-P003-MED_RECO",
+      "severity": "medium",
+      "message": "Med reconciliation flag: Metoprolol",
+      "tool": "safety_escalation",
+      "status": "QUEUED_FOR_REVIEW"
+    }
+  ],
+  "conflicts": [],
+  "global_flags": [
+    "DRUG_INTERACTION_FOUND",
+    "DOSE_CHANGE_WITHOUT_DOCUMENTED_REASON",
+    "NEW_MED_WITHOUT_DOCUMENTED_REASON",
+    "DRAFT \u2014 requires clinician sign-off"
+  ]
+}
